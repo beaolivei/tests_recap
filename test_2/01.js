@@ -24,30 +24,7 @@ in the second object
 
 const keyMatcher = function (firstObj, secondObj, key) {
   /* IMPLEMENT ME */
-  let firstObjValue = '';
-  let secondObjValue = '';
-
-  for(let el in firstObj){
-    if( el === key){
-        firstObjValue = firstObj[el]
-    }
-  }
-
-  for(let el in secondObj){
-    if( el === key){
-        secondObjValue = secondObj[el]
-    }
-  }
-
-  if( firstObjValue === secondObjValue){
-    return true
-  } else if( firstObjValue !== secondObjValue){
-    return false
-  } else if (firstObjValue === '' || secondObjValue === ''){
-    return false
-  }
 };
-console.log('result' , keyMatcher({a: 1, b: 2, c: 3}, {d: 4, e: 5, f: 6}, 'b'))
 
 // Don't change below:
 

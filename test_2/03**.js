@@ -15,11 +15,13 @@ to build one. Build out the function range() so that it takes three parameters:
 
 1. The number of integers to generate
 2. A boolean for whether to skip 0 or not (true: skip zero)
-3. A boolean for whether the range should be in reverse/decreasing order or regular/increasing order (true: reverse/decreasing order)
+3. A boolean for whether the range should be in reverse/decreasing order or regular/increasing
+ order (true: reverse/decreasing order)
 
 If a non-number is passed in for the first argument, return an empty array.
 
-Pro Tip: Remember to work incrementally. Start off just implementing the false and false scenario for the second and third parameters. In other words, focus on the zero-based, ascending range first. Work on edge cases at the very end (such as passing in a string instead of a number, as shown in the final example below.)
+Pro Tip: Remember to work incrementally. Start off just implementing the false and false 
+scenario for the second and third parameters. In other words, focus on the zero-based, ascending range first. Work on edge cases at the very end (such as passing in a string instead of a number, as shown in the final example below.)
 
 **Examples:**
 
@@ -37,21 +39,22 @@ Pro Tip: Remember to work incrementally. Start off just implementing the false a
 const range = function(count, skipZero, descending) {
 
   /* IMPLEMENT ME */
-    let array = []
-    let firstElement = skipZero ? 1 : 0
-    let lastElement = skipZero ? count : count - 1
-    while(lastElement >= firstElement){
-        array.push(lastElement)
-        lastElement = lastElement - 1
-    }
-    if(descending){
-        return array
-    } else{
-       return array.reverse()
-    } 
+  let array = []
+  let fisrtEl = skipZero ? 1 : 0
+  let lastEl = skipZero ? count : count - 1
+
+  while(lastEl >= fisrtEl){
+    array.push(lastEl)
+    lastEl = lastEl - 1
+  }
+  if(descending){
+    return array
+  } else{
+    return array.reverse()
+  }
 };
 
-console.log(' result', range(3, false , true))
+console.log(' result', range(10, false, true) )
 
 // Don't change below:
 

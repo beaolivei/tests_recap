@@ -18,19 +18,8 @@ Examples:
 */
 
 const tempConverter = function(value, cToF) {
-    if(cToF){
-       return (value * 9/5) + 32
-    } else if(!cToF) {
-      return  (value - 32) * 5/9
-    } else if(value === NaN){
-        return NaN
-    }
-
-  /* IMPLEMENT ME */
 
 };
-
-console.log(' transfer',  tempConverter(' hello', false) )
 
 // Don't change below:
 

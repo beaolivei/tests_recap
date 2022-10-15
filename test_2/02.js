@@ -20,17 +20,7 @@ Examples:
 const countWhich = function(list, cb) {
 
   /* IMPLEMENT ME */
-  const elementsThatMeetOurCondition = []
-  list.map((el) => {
-    if(cb(el)){
-        elementsThatMeetOurCondition.push(el)
-    }
-  })
-
-  return elementsThatMeetOurCondition.length
 };
-
-console.log(' result', countWhich(["apple", "banana", "cherry"], function(fruit) { return fruit.length > 5; }))
 
 // Don't change below:
 

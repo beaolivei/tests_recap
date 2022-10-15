@@ -21,17 +21,8 @@ Examples:
 
 const minmax = function(list) {
 
- const sortedArray = list.sort((a,b) => a-b)
- if(list.length){
-    return [sortedArray[0],sortedArray[sortedArray.length-1]]
- } else {
-    return [undefined, undefined]
- }
-
 };
 
-
-console.log(' result', minmax([]))
 // Don't change below:
 
 module.exports = { minmax };
